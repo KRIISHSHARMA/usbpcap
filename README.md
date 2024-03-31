@@ -43,5 +43,9 @@ See [Wireshark Wiki](https://wiki.wireshark.org/CaptureSetup/USB#Linux) for more
 
     sudo setfacl -m u:$(whoami):r /dev/usbmon*
 
-
-Now the usbmon interfaces should appear in Wireshark.
+# Execute 
+``` sh
+sudo modprobe usbmon
+```
+- To see which usbmon is keybord
+- check `lsusb`
