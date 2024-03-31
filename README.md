@@ -41,6 +41,7 @@ See [Wireshark Wiki](https://wiki.wireshark.org/CaptureSetup/USB#Linux) for more
 
     If the usbmon* files have 'crw-------', then it's normal that Wireshark cannot read them because it's not run as root. Do not execute wireshark in root mode, it may damage files. Instead, you can give it regular users privileges :
 
-    sudo setfacl -m u:$USER:r /dev/usbmon*
+    sudo setfacl -m u:$(whoami):r /dev/usbmon*
+
 
 Now the usbmon interfaces should appear in Wireshark.
