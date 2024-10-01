@@ -47,5 +47,4 @@ See [Wireshark Wiki](https://wiki.wireshark.org/CaptureSetup/USB#Linux) for more
 ``` sh
 sudo modprobe usbmon
 ```
-- To see which usbmon is keybord
 - check `lsusb`
